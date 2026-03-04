@@ -24,6 +24,5 @@ public class Mtitik {
         T2.printTitik();
 
         System.out.println("Jumlah Objek Titik = " + Titik.getCounterTitik());
-        System.out.println("Jumlah Objek Titik = " + T2.getCounterTitik());
     }
 }

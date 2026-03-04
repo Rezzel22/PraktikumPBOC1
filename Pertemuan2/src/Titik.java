@@ -45,4 +45,41 @@ public class Titik {
         this.ordinat = ordinat;
         counterTitik ++;
     }
+
+    public int getKuadran(){
+        if (absis > 0 && ordinat > 0)
+            return 1;
+        if (absis < 0 && ordinat > 0)
+            return 2;
+        if (absis < 0 && ordinat < 0)
+            return 3;
+        if (absis > 0 && ordinat < 0)
+            return 4;
+        else
+            return 0;
+    }
+
+    public double getJarak(Titik t){
+        return Math.sqrt(((this.absis - t.getAbsis()) * (this.absis - t.getAbsis())) + ((this.ordinat - t.getOrdinat()) * (this.ordinat - t.getOrdinat())));
+    }
+
+    public double getJarakPusat(){
+        return Math.sqrt(this.absis * this.absis + this.ordinat * this.ordinat);
+    }
+
+    void refleksiX(){
+        ordinat = ordinat * -1;
+    }
+
+    void refleksiY(){
+        absis = absis * -1;
+    }
+
+    Titik getRefleksiX(){
+        return new Titik(absis , ordinat * -1);
+    }
+
+    Titik getRefleksiY(){
+        return new Titik(absis * -1 , ordinat);
+    }
 }
