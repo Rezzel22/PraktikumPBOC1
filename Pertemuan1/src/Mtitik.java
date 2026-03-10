@@ -5,11 +5,17 @@
 
 public class Mtitik {
     public static void main(String[] args) {
+
+        // Membuat objek titik T1 menggunakan konstruktor default
         Titik T1 = new Titik();
         T1.setAbsis(3);
-        T1.setOrdinat(5);
+        T1.setOrdinat(4);
         T1.printTitik();
+
+        // Menggeser titik T1 sejauh 3 pada sumbu x dan 4 pada sumbu y
         T1.geser(3,4);
+
+        // Menampilkan kembali posisi titik setelah digeser
         T1.printTitik();
     }
 }
