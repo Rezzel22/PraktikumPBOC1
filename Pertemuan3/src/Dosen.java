@@ -1,60 +1,78 @@
 /*Nama File     : Dosen.java
  *Deskripsi     : Berisi atribut dan method dalam class Dosen
  *Pembuat       : Imam Alfarezel(24060124120028)
- *Tanggal       : 05/03/2026 */
+ *Tanggal       : 05/03/2026 
+ *Lab           : C1*/
 
 public class Dosen {
-    private String Nip;
-    private String Nama;
-    private String Prodi;
+    /*Atribut*/
+    
+    private String nip;
+    private String nama;
+    private String prodi;
     private static int CountDosen; 
 
-    //Konstruktor
+    /*Konstruktor*/
+
+    //konstruktor tanpa parameter untuk membuat objek dosen dengan nilai awal kosong
     public Dosen(){
-        Nip = "";
-        Nama = "";
-        Prodi = "";
+        nip = "";
+        nama = "";
+        prodi = "";
         CountDosen ++;
     }
 
+    //konstruktor dengan parameter untuk menginisialisasi atribut dosen saat objek dibuat
     public Dosen(String Nip, String Nama, String Prodi){
-        this.Nip = Nip;
-        this.Nama = Nama;
-        this.Prodi = Prodi;
+        this.nip = Nip;
+        this.nama = Nama;
+        this.prodi = Prodi;
         CountDosen++;
     }
 
-    //Selektor
+    /*Selektor*/
+
+    //method getter untuk mengambil nilai NIP dosen
     public String getNip(){
-        return Nip;
+        return nip;
     }
 
+    //method getter untuk mengambil nilai NIP dosen
     public String getNamaDosen(){
-        return Nama;
+        return nama;
     }
 
+    //method getter untuk mengambil nilai program studi dosen
     public String getProdi(){
-        return Prodi;
+        return prodi;
     }
     
-    static int getCounterDosen(){
+    //method static untuk mendapatkan jumlah objek dosen yang telah dibuat
+    public static int getCounterDosen(){
         return CountDosen;
     }
 
-    //Mutator
+    /*Mutator*/
+
+    //method setter untuk mengubah nilai NIP dosen
     public void setNip(String N){
-        Nip = N;
+        nip = N;
     }
 
+    //method setter untuk mengubah nama dosen
     public void setNama(String M){
-        Nama = M;
+        nama = M;
     }
 
+    //method setter untuk mengubah program studi dosen
     public void setProdi(String P){
-        Prodi = P;
+        prodi = P;
     }
 
+    /*Method menampilkan data dosen*/
+
+    //method untuk menampilkan seluruh informasi dosen ke layar
     public void printDosen(){
-        System.out.println("NIP :" + Nip + "Nama :" + Nama + "Prodi :" + Prodi);
+        System.out.println("NIP : " + nip + "Nama : " + nama + "Prodi : " + prodi);
     }
 }

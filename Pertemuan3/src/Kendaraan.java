@@ -5,38 +5,52 @@
  *Lab           : C1 */
 
 public class Kendaraan {
+    /*Atribut*/
     private String noPlat;
-    private String Jenis;
+    private String jenis;
 
+    /*Konstruktor*/
+
+    //konstruktor tanpa parameter untuk membuat objek kendaraan dengan nilai awal kosong
     public Kendaraan(){
         noPlat = "";
-        Jenis = "";
+        jenis = "";
     }
 
+    //konstruktor dengan parameter untuk menginisialisasi nomor plat dan jenis kendaraan saat objek dibuat
     public Kendaraan(String noPlat, String Jenis){
         this.noPlat = noPlat;
-        this.Jenis = Jenis;
+        this.jenis = Jenis;
     }
 
-    //Selektor
+    /*Selektor*/
+
+    //method getter untuk mengambil nilai nomor plat kendaraan
     public String getNoPlat(){
         return noPlat;
     }
 
+    //method getter untuk mengambil jenis kendaraan
     public String getJenis(){
-        return Jenis;
+        return jenis;
     }
 
-    //Mutator
+    /*Mutator*/
+
+    //method setter untuk mengubah atau menetapkan nomor plat kendaraan
     public void setNoPlat(String No){
         noPlat = No;
     }
 
+    //method setter untuk mengubah atau menetapkan jenis kendaraan
     public void setJenis(String J){
-        Jenis = J;
+        jenis = J;
     }
 
-    public void printDosen(){
-        System.out.println("Nomor Plat :" + noPlat + " Jenis :" + Jenis);
+    /*Method menampilkan data kendaraan*/
+    
+    //Menampilkan data dari kendaraan
+    public void printKendaraan(){
+        System.out.println("Nomor Plat :" + noPlat + " Jenis :" + jenis);
     }
 }
