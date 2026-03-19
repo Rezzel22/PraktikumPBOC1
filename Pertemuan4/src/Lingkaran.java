@@ -5,13 +5,13 @@ public class Lingkaran extends BangunDatar{
 
     /*Konstruktor */
     public Lingkaran(){
-        setJmlSisi(1);
-        counterLingkaran++;
+    super(1, "", "");
+    counterLingkaran++;
     }
 
     /*Konstruktor dengan parameter */
     public Lingkaran(double jari, String warna, String border){
-        super(4,warna,border);
+        super(1,warna,border);
         this.jari = jari;
         counterLingkaran++;
     }
@@ -31,6 +31,6 @@ public class Lingkaran extends BangunDatar{
     public void printInfo(){
         super.printInfo();
         System.out.println("Jari-jari  : " + jari);
-        System.out.println("Jumlah Persegi : "+ counterLingkaran);
+        System.out.println("Jumlah Lingkaran : "+ counterLingkaran);
     }
 }
