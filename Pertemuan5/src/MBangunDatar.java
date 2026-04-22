@@ -1,3 +1,10 @@
+/* Nama File : MBangunDatar.java
+ * Deskripsi : Main class untuk semua jenis bangun datar
+ * Pembuat   : Imam Alfarezel
+ * Tanggal   : 15/04/2026
+ */
+
+
 public class MBangunDatar {
     public static void main(String[] args) {
 
