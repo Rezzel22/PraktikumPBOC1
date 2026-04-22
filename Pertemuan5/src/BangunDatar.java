@@ -1,4 +1,10 @@
-public class BangunDatar {
+/* Nama File : BangunDatar.java
+ * Deskripsi : Abstract class untuk semua jenis bangun datar
+ * Pembuat   : Imam Alfarezel
+ * Tanggal   : 15/04/2026
+ */
+
+public abstract class BangunDatar {
     /*Atribut */
     protected int jmlSisi;
     protected String warna;
@@ -6,11 +12,12 @@ public class BangunDatar {
     private static int counterBangunDatar; 
 
     /*Konstruktor */
+        //Tanpa parameter
     public BangunDatar(){
         counterBangunDatar++;
     }
 
-    //Konstruktor untuk 
+        //Konstruktor Dengan Parameter
     public BangunDatar(int jmlSisi, String warna, String border){
         this.jmlSisi = jmlSisi;
         this.warna = warna;
@@ -42,6 +49,20 @@ public class BangunDatar {
 
     public void setBorder(String Border){
         this.border = Border;
+    }
+
+    /*Method Tambahan */
+        //Method abstract
+    public abstract double getLuas();
+    public abstract double getKeliling();
+
+        //Method perbandingan
+    public boolean IsEqualLuas(BangunDatar x){
+        return this.getLuas() == x.getLuas();
+    }
+
+    public boolean IsEqualKeliling(BangunDatar x){
+        return this.getKeliling() == x.getKeliling();
     }
 
     /*Method Menampilkan BangunDatar */
