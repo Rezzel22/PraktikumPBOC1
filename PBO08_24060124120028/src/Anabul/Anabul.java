@@ -13,38 +13,38 @@ public class Anabul {
  
     /* Konstruktor */
  
-    // Konstruktor tanpa parameter
+        // Konstruktor tanpa parameter
     public Anabul() {
         nama = "n/a";
     }
  
-    //Konstruktor dengan parameter nama
+        //Konstruktor dengan parameter nama
     public Anabul(String nama) {
         this.nama = nama;
     }
  
     /* Selektor */
  
-    // Method untuk mengambil nama anabul
+    // Fungsi untuk mengambil nama anabul
     public String getNama() {
         return nama;
     }
  
     /* Mutator */
  
-    // Method untuk mengubah nama anabul
+    // Prosedeur untuk mengubah nama anabul
     public void setNama(String nama) {
         this.nama = nama;
     }
  
-    /* Method */
+    /* Fungsi dan prosedur Lainnya*/
  
-    // Method gerak, akan di-override oleh kelas anak
+    // Prosedur gerak, akan di-override oleh kelas anak
     public void Gerak() {
         System.out.println("Anabul " + (this.getNama() == "" ? "" : this.getNama() + " ") + "bergerak.");
     }
  
-    // Method bersuara, akan di-override oleh kelas anak
+    // Prosedur bersuara, akan di-override oleh kelas anak
     public void Bersuara() {
         System.out.println( "Anabul bersuara.");
     }

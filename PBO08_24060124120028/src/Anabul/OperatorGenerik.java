@@ -4,7 +4,7 @@ public class OperatorGenerik {
     /* Atribut */
  
 
-    /*FFungsi dan Prosedur tambahan */
+    /*Fungsi dan Prosedur tambahan */
         // Prosedur Generik menukar dua variabel
     public <G> void Tukar(Datum<G> a, Datum<G> b) {
         /* Kamus Lokal */

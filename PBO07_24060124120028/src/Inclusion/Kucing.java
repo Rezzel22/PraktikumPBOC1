@@ -8,7 +8,7 @@ package Inclusion;
 
 public class Kucing extends Anabul {
     /* Atribut */
- 
+    
     /* Konstruktor */
  
     // Konstruktor tanpa parameter
@@ -20,7 +20,7 @@ public class Kucing extends Anabul {
     public Kucing(String nama) {
         super(nama);
     }
- 
+
     /* Method */
  
     // Override Gerak: kucing bergerak dengan melata
